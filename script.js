@@ -18,17 +18,17 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
     if (data.weather[0].main === "Clouds") {
-      weatherIcons.src = "/images/clouds.png";
+      weatherIcons.src = "images/clouds.png";
     } else if (data.weather[0].main === "Clear") {
-      weatherIcons.src = "/images/clear.png";
+      weatherIcons.src = "images/clear.png";
     } else if (data.weather[0].main === "Rain") {
-      weatherIcons.src = "/images/rain.png";
+      weatherIcons.src = "images/rain.png";
     } else if (data.weather[0].main === "Snow") {
-      weatherIcons.src = "/images/snow.png";
+      weatherIcons.src = "images/snow.png";
     } else if (data.weather[0].main === "Drizzle") {
-      weatherIcons.src = "/images/drizzle.png";
+      weatherIcons.src = "images/drizzle.png";
     } else if (data.weather[0].main === "Mist") {
-      weatherIcons.src = "/images/mist.png";
+      weatherIcons.src = "images/mist.png";
     }
   } catch (error) {
     alert("Gagal mengambil data cuaca");
